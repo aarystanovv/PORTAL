@@ -1,0 +1,798 @@
+/*@font-face {*/
+/*    font-family: "Frank Regular";*/
+/*    src: url("//db.onlinewebfonts.com/t/cb411addb2defea511c51f6adb88b44e.eot");*/
+/*    src: url("//db.onlinewebfonts.com/t/cb411addb2defea511c51f6adb88b44e.eot?#iefix") format("embedded-opentype"),*/
+/*    url("//db.onlinewebfonts.com/t/cb411addb2defea511c51f6adb88b44e.woff2") format("woff2"),*/
+/*    url("//db.onlinewebfonts.com/t/cb411addb2defea511c51f6adb88b44e.woff") format("woff"),*/
+/*    url("//db.onlinewebfonts.com/t/cb411addb2defea511c51f6adb88b44e.ttf") format("truetype"),*/
+/*    url("//db.onlinewebfonts.com/t/cb411addb2defea511c51f6adb88b44e.svg#Frank Regular") format("svg");*/
+/*}*/
+
+* {
+	margin: 0 auto;
+	font-family: Arial;
+}
+
+body {
+	overflow-x: hidden;
+	background-color: black;
+}
+
+header .header-content {
+	width: 82%;
+	left: 0;
+	right: 0;
+	margin-top: 35px;
+	position: fixed;
+	z-index: 1;
+}
+
+header .header-content .brand-logo {
+	float: left;
+	display: block;
+}
+
+header .header-content .header-info {
+	float: right;
+	display: flex;
+}
+
+header .header-info a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	border: 1px solid white;
+	border-radius: 50px;
+	padding: 8px 25px;
+	transition-duration: 0.3s;
+}
+
+header .header-info a:hover {
+	border-color: #3cbd2c;
+	color: #3cbd2c;
+	transition-duration: 0.3s;
+}
+
+main .main-content .brand-info,
+main .main-content .works,
+main .main-content .videos,
+main .main-content .project-timeline,
+main .main-content .input {
+	width: 82%;
+}
+
+main .main-content .brand-video video {
+	width: 100%;
+	margin-top: -80px;
+}
+
+main .main-content .brand-video .overlay {
+	position: absolute;
+	width: 100%;
+	height: 775px;
+}
+
+main .main-content .brand-video .overlay p {
+	padding-top: 250px;
+	padding-bottom: 186px;
+	color: white;
+	mix-blend-mode: multiply;
+	background: rgb(0, 0, 0, 0.9);
+	text-align: center;
+	font-size: 350px;
+	letter-spacing: -25px;
+	height: 80%;
+}
+
+main .main-content .brand-info {
+	color: white;
+	width: 70%;
+	float: right;
+	margin-top: 10%;
+	margin-bottom: 9%;
+}
+
+main .main-content .brand-info p {
+	line-height: 40px;
+	font-size: 29px;
+}
+
+main .main-content .brand-info .brand-info-bottom-left,
+.brand-info-bottom-right {
+	float: left;
+	width: 27%;
+	margin-top: 10%;
+}
+
+main .main-content .brand-info .brand-info-bottom-left span,
+.brand-info-bottom-right span {
+	font-size: 18px;
+	color: gray;
+}
+
+main .main-content .brand-info .brand-info-bottom-left p,
+.brand-info-bottom-right p {
+	margin-top: 16%;
+}
+
+main .main-content .works {
+	margin-bottom: 7%;
+}
+
+main .main-content .works .title p {
+	color: white;
+	margin-top: 10%;
+	font-size: 160px;
+	font-weight: bold;
+}
+
+main .main-content .works .title sup {
+	font-size: 20px;
+	color: #3cbd2c;
+}
+
+main .main-content .videos .main-video video {
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main .main-content .videos .main-video .video-info {
+	margin-top: 2%;
+}
+
+main .main-content .videos .main-video .video-info #main-video-info-1 {
+	display: inline-block;
+	font-size: 19px;
+	color: white;
+	border: 1px solid white;
+	border-radius: 50px;
+	padding: 5px 20px;
+}
+
+main .main-content .videos .main-video .video-info #main-video-info-2 {
+	display: inline-block;
+	float: right;
+	font-size: 19px;
+	color: white;
+}
+
+main .main-content .videos .other-videos {
+	width: 100%;
+}
+
+main .main-content .videos .other-videos .left {
+	float: left;
+	display: inline;
+	width: 49%;
+}
+
+main .main-content .videos .other-videos .left .left-video-1 video,
+main .main-content .videos .other-videos .left .left-video-2 video,
+main .main-content .videos .other-videos .left .left-video-3 video,
+main .main-content .videos .other-videos .left .left-video-4 video,
+main .main-content .videos .other-videos .left .left-video-5 video {
+	float: left;
+	display: inline;
+	margin-top: 15%;
+	width: 100%;
+}
+
+main .main-content .videos .other-videos .left .left-video-1 .left-video-1-info,
+main .main-content .videos .other-videos .left .left-video-2 .left-video-2-info,
+main .main-content .videos .other-videos .left .left-video-3 .left-video-3-info,
+main .main-content .videos .other-videos .left .left-video-4 .left-video-4-info,
+main
+	.main-content
+	.videos
+	.other-videos
+	.left
+	.left-video-5
+	.left-video-5-info {
+	color: white;
+	width: 100%;
+}
+
+main
+	.main-content
+	.videos
+	.other-videos
+	.left
+	.left-video-1
+	.left-video-1-info
+	#video-info-1,
+main
+	.main-content
+	.videos
+	.other-videos
+	.left
+	.left-video-2
+	.left-video-2-info
+	#video-info-1,
+main
+	.main-content
+	.videos
+	.other-videos
+	.left
+	.left-video-3
+	.left-video-3-info
+	#video-info-1,
+main
+	.main-content
+	.videos
+	.other-videos
+	.left
+	.left-video-4
+	.left-video-4-info
+	#video-info-1,
+main
+	.main-content
+	.videos
+	.other-videos
+	.left
+	.left-video-5
+	.left-video-5-info
+	#video-info-1 {
+	float: left;
+	border: 1px solid white;
+	padding: 7px 30px;
+	border-radius: 50px;
+	display: flex;
+	font-size: 19px;
+	margin-top: 3%;
+}
+
+main
+	.main-content
+	.videos
+	.other-videos
+	.left
+	.left-video-1
+	.left-video-1-info
+	#video-info-2,
+main
+	.main-content
+	.videos
+	.other-videos
+	.left
+	.left-video-2
+	.left-video-2-info
+	#video-info-2,
+main
+	.main-content
+	.videos
+	.other-videos
+	.left
+	.left-video-3
+	.left-video-3-info
+	#video-info-2,
+main
+	.main-content
+	.videos
+	.other-videos
+	.left
+	.left-video-4
+	.left-video-4-info
+	#video-info-2,
+main
+	.main-content
+	.videos
+	.other-videos
+	.left
+	.left-video-5
+	.left-video-5-info
+	#video-info-2 {
+	float: right;
+	display: flex;
+	font-size: 19px;
+	margin-top: 3%;
+}
+
+main .main-content .videos .other-videos .right {
+	float: right;
+	display: inline;
+	width: 49%;
+}
+
+main .main-content .videos .other-videos .right .right-video-1 video,
+main .main-content .videos .other-videos .right .right-video-2 video,
+main .main-content .videos .other-videos .right .right-video-3 video,
+main .main-content .videos .other-videos .right .right-video-4 video,
+main .main-content .videos .other-videos .right .right-video-5 video {
+	float: right;
+	display: inline;
+	margin-top: 15%;
+	width: 100%;
+}
+
+main
+	.main-content
+	.videos
+	.other-videos
+	.right
+	.right-video-1
+	.right-video-1-info,
+main
+	.main-content
+	.videos
+	.other-videos
+	.right
+	.right-video-2
+	.right-video-2-info,
+main
+	.main-content
+	.videos
+	.other-videos
+	.right
+	.right-video-3
+	.right-video-3-info,
+main
+	.main-content
+	.videos
+	.other-videos
+	.right
+	.right-video-4
+	.right-video-4-info,
+main
+	.main-content
+	.videos
+	.other-videos
+	.right
+	.right-video-5
+	.right-video-5-info {
+	color: white;
+	width: 100%;
+}
+
+main
+	.main-content
+	.videos
+	.other-videos
+	.right
+	.right-video-1
+	.right-video-1-info
+	#video-info-1,
+main
+	.main-content
+	.videos
+	.other-videos
+	.right
+	.right-video-2
+	.right-video-2-info
+	#video-info-1,
+main
+	.main-content
+	.videos
+	.other-videos
+	.right
+	.right-video-3
+	.right-video-3-info
+	#video-info-1,
+main
+	.main-content
+	.videos
+	.other-videos
+	.right
+	.right-video-4
+	.right-video-4-info
+	#video-info-1,
+main
+	.main-content
+	.videos
+	.other-videos
+	.right
+	.right-video-5
+	.right-video-5-info
+	#video-info-1 {
+	float: left;
+	border: 1px solid white;
+	padding: 7px 30px;
+	border-radius: 50px;
+	font-size: 19px;
+	margin-top: 3%;
+	display: flex;
+}
+
+main
+	.main-content
+	.videos
+	.other-videos
+	.right
+	.right-video-1
+	.right-video-1-info
+	#video-info-2,
+main
+	.main-content
+	.videos
+	.other-videos
+	.right
+	.right-video-2
+	.right-video-2-info
+	#video-info-2,
+main
+	.main-content
+	.videos
+	.other-videos
+	.right
+	.right-video-3
+	.right-video-3-info
+	#video-info-2,
+main
+	.main-content
+	.videos
+	.other-videos
+	.right
+	.right-video-4
+	.right-video-4-info
+	#video-info-2,
+main
+	.main-content
+	.videos
+	.other-videos
+	.right
+	.right-video-5
+	.right-video-5-info
+	#video-info-2 {
+	float: right;
+	display: flex;
+	margin-top: 3%;
+	font-size: 19px;
+}
+
+main .main-content .project-timeline {
+	margin-top: 20%;
+}
+
+main .main-content .project-timeline .project-timeline-desc {
+	width: 100%;
+	color: white;
+	font-size: 130px;
+	margin-bottom: 10%;
+	font-weight: bold;
+}
+
+main .main-content .project-timeline .project-timeline-desc sup {
+	color: #3cbd2c;
+	font-size: 20px;
+	width: 51.5%;
+	float: right;
+}
+
+main .main-content .project-timeline .step-3 .step-info .storyboard {
+	color: #3cbd2c;
+	text-decoration: none;
+}
+
+main .main-content .project-timeline .step-0,
+main .main-content .project-timeline .step-1,
+main .main-content .project-timeline .step-2,
+main .main-content .project-timeline .step-3,
+main .main-content .project-timeline .step-4,
+main .main-content .project-timeline .step-5,
+main .main-content .project-timeline .step-6 {
+	width: 100%;
+	border-top: 1px solid white;
+	color: white;
+	padding: 60px 50px;
+}
+
+main .main-content .project-timeline .step-0 .step-number,
+main .main-content .project-timeline .step-1 .step-number,
+main .main-content .project-timeline .step-2 .step-number,
+main .main-content .project-timeline .step-3 .step-number,
+main .main-content .project-timeline .step-4 .step-number,
+main .main-content .project-timeline .step-5 .step-number,
+main .main-content .project-timeline .step-6 .step-number {
+	display: flex;
+	float: left;
+	font-size: 26px;
+}
+
+main .main-content .project-timeline .step-0 .step-info,
+main .main-content .project-timeline .step-1 .step-info,
+main .main-content .project-timeline .step-2 .step-info,
+main .main-content .project-timeline .step-3 .step-info,
+main .main-content .project-timeline .step-4 .step-info,
+main .main-content .project-timeline .step-5 .step-info,
+main .main-content .project-timeline .step-6 .step-info {
+	width: 40%;
+	font-size: 20px;
+}
+
+main .main-content .project-timeline .step-0 .step-info a {
+	color: #3cbd2c;
+	text-decoration: none;
+}
+
+main .main-content .input {
+	margin-top: 7%;
+	height: 890px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+main .main-content .input .left p {
+	position: absolute;
+	font-size: 40px;
+	color: white;
+}
+
+main .main-content .input .left {
+	float: left;
+	width: 35%;
+	margin-top: 20px;
+}
+
+main .main-content .input .right {
+	float: right;
+	width: 65%;
+	margin-top: -170px;
+}
+
+main .main-content .left form {
+	margin-top: 140px;
+}
+
+main .main-content .left form input {
+	color: white;
+	padding-bottom: 25px;
+	padding-right: 160px;
+	font-size: 20px;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #eee;
+}
+
+main .main-content .left form input:focus {
+	outline: none;
+}
+
+#btnSubmit {
+	margin-top: 10%;
+	font-size: 20px;
+	border: 1px solid white;
+	border-radius: 50px;
+	padding: 13px 90px;
+	cursor: pointer;
+}
+
+footer {
+	background-color: #3cbd2c;
+}
+
+footer .footer-content {
+	width: 83%;
+	height: 690px;
+	margin-top: -20%;
+}
+
+footer .footer-content .footer-brand-name p {
+	margin-top: 15%;
+	margin-right: 150px;
+	font-size: 330px;
+	transform: scaleX(0.99);
+}
+
+footer .footer-content .social {
+	width: 100%;
+}
+
+footer .footer-content .social .left {
+	width: 50%;
+	float: left;
+}
+
+footer .footer-content .social .right {
+	width: 50%;
+	float: right;
+	display: flex;
+}
+
+footer .footer-content .social p a {
+	font-size: 18px;
+	color: black;
+	text-decoration: none;
+	border: 1px solid black;
+	border-radius: 50px;
+	padding: 5px 20px;
+	display: inline-block;
+	transition: 0.3s;
+}
+
+footer .footer-content .social p a:hover {
+	color: #3cbd2c;
+	background-color: black;
+	transition-duration: 0.3s;
+}
+
+footer .footer-content .social .right img {
+	float: right;
+}
+
+footer .contacts {
+	margin-top: 5%;
+}
+
+#contacts {
+	font-size: 30px;
+}
+
+@media only screen and (max-width: 1230px) {
+	main .main-content .brand-video {
+		width: 130vh;
+		height: 80vh;
+	}
+
+	main .main-content .brand-video .overlay p {
+		width: 130vh;
+	}
+
+	main .main-content .brand-info p {
+		line-height: 40px;
+		font-size: 50px;
+		padding-bottom: 50px;
+	}
+
+	main .main-content .brand-info .brand-info-bottom .brand-info-bottom-left {
+		margin-right: 300px;
+	}
+
+	main .main-video {
+		width: 110vh;
+	}
+
+	main .main-content .videos .other-videos {
+		width: 110vh;
+	}
+
+	main .main-content .project-timeline .project-timeline-desc p {
+		padding-top: 500px;
+	}
+
+	main .main-content .project-timeline .step-0,
+	main .main-content .project-timeline .step-1,
+	main .main-content .project-timeline .step-2,
+	main .main-content .project-timeline .step-3,
+	main .main-content .project-timeline .step-4,
+	main .main-content .project-timeline .step-5,
+	main .main-content .project-timeline .step-6 {
+		width: 100%;
+		border-top: 1px solid white;
+		color: white;
+		padding: 60px 200px;
+	}
+
+	main .main-content .input .right {
+		float: right;
+		width: 50%;
+		margin-top: -170px;
+	}
+
+	footer {
+		width: 130vh;
+	}
+}
+
+@media only screen and (max-width: 990px) {
+	main .main-content .brand-video {
+		width: 150vh;
+		height: 90vh;
+	}
+
+	main .main-content .brand-video .overlay p {
+		width: 150vh;
+		height: 50vh;
+	}
+
+	main .main-content .brand-info {
+		line-height: 40px;
+		font-size: 50px;
+		padding-bottom: 40px;
+	}
+
+	main .main-video {
+		width: 130vh;
+	}
+
+	main .main-content .videos .other-videos {
+		width: 130vh;
+	}
+
+	footer {
+		width: 150vh;
+	}
+}
+
+@media only screen and (max-width: 770px) {
+	main .main-content .brand-video {
+		width: 200vh;
+		height: 110vh;
+	}
+
+	main .main-content .brand-video .overlay p {
+		width: 200vh;
+		height: 50vh;
+	}
+
+	main .main-content .brand-info {
+		line-height: 40px;
+		font-size: 50px;
+		padding-bottom: 40px;
+		padding-left: 300px;
+		width: auto;
+	}
+
+	main .main-video {
+		width: 170vh;
+	}
+
+	main .main-content .videos .other-videos {
+		width: 170vh;
+	}
+
+	main .main-content .project-timeline .step-0,
+	main .main-content .project-timeline .step-1,
+	main .main-content .project-timeline .step-2,
+	main .main-content .project-timeline .step-3,
+	main .main-content .project-timeline .step-4,
+	main .main-content .project-timeline .step-5,
+	main .main-content .project-timeline .step-6 {
+		width: 100%;
+		border-top: 1px solid white;
+		color: white;
+		padding: 60px 350px;
+	}
+
+	main .main-content .input .right {
+		float: right;
+		width: 30%;
+		margin-top: -180px;
+	}
+
+	footer {
+		width: 200vh;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	main .main-content .brand-video {
+		width: 250vh;
+		height: 150vh;
+	}
+
+	main .main-content .brand-video .overlay p {
+		width: 250vh;
+		height: 60vh;
+	}
+
+	main .main-content .brand-info {
+		line-height: 40px;
+		font-size: 40px;
+	}
+
+	main .main-video {
+		width: 220vh;
+	}
+
+	main .main-content .videos .other-videos {
+		width: 220vh;
+	}
+
+	main .main-content .project-timeline .step-0,
+	main .main-content .project-timeline .step-1,
+	main .main-content .project-timeline .step-2,
+	main .main-content .project-timeline .step-3,
+	main .main-content .project-timeline .step-4,
+	main .main-content .project-timeline .step-5,
+	main .main-content .project-timeline .step-6 {
+		width: 100%;
+		border-top: 1px solid white;
+		color: white;
+		padding: 60px 400px;
+	}
+
+	footer {
+		width: 250vh;
+	}
+}
